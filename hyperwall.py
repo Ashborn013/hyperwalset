@@ -3,6 +3,7 @@ import os
 import json
 import sys
 
+#location of the repo
 loc = "/home/arjun/arjun/apps/hyperwalset"
 
 
