@@ -47,5 +47,7 @@ if __name__ == "__main__":
     data = json.load(file)
     colors = data["colors"]
     c1, c2 = colors["color1"], colors["color15"]
-    hyperset(c1, data["wallpaper"])
+    walldata = "~/arjun/"+data["wallpaper"].strip('/home/arjun/')
+    hyperset(c1, walldata)
     waybar(c1, c2)
+    print(walldata)
