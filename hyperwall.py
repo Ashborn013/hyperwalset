@@ -4,7 +4,7 @@ import json
 import sys
 username='arjun'
 #location of the repo
-loc = f"/home/{username}/arjun/apps/hyperwalset"
+loc = f"/home/{username}/apps/hyperwalset"
 
 
 def hyperset(c1, wall):
