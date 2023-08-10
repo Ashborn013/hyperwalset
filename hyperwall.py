@@ -30,9 +30,18 @@ def waybar(c1, c2):
         file = open(f"/home/{username}/.config/waybar/{i}", "w")
         file.write(data)
 
-        # os.system('killall waybar')
-        # os.system('waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css')
-        #
+def wofi(c1, c2):
+    for i in ["style.css"]:
+        file = open(f"{loc}/config/wofi/{i}", "r")
+        data = file.read()
+        file.close()
+
+        data = data.replace("{insertCol1}", c1)
+        data = data.replace("{insertCol2}", c2)
+
+        file = open(f"/home/{username}/.config/wofi/{i}", "w")
+        file.write(data)
+
 
 
 if __name__ == "__main__":
@@ -50,3 +59,5 @@ if __name__ == "__main__":
     walldata = f"~/"+data["wallpaper"].strip(f'/home/{username}/')
     hyperset(c1, walldata)
     waybar(c1, c2)
+    wofi(c1,c2)
+
