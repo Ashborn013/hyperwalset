@@ -19,7 +19,7 @@ def hyperset(c1, wall):
 
 
 def waybar(c1, c2):
-    for i in ["config", "style.css"]:
+    for i in ["style.css"]:
         file = open(f"{loc}/config/waybar/{i}", "r")
         data = file.read()
         file.close()

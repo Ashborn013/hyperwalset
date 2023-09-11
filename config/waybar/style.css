@@ -1,86 +1,213 @@
+
 * {
-  border: none;
-  font-family: 'JetBrainsMono Nerd Font' , 'Symbols Only';
+  padding: 0;
+  margin: 0;
+  font-family: JetBrainsMono Nerd Font;
+  font-weight: bold;
   font-size: 16px;
-  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-  min-height: 30px;
+  background-color: rgba(15,17,19,1); /* Reduced opacity background */
+  border-radius: 5px 0px 0px 5px;
+}
+
+.modules-right {
+  background-color: rgba(15,17,19,1);
 }
 
 window#waybar {
-  background: transparent;
+  background-color: rgba(243, 143, 173, 0);
 }
 
-#custom-arch, #workspaces {
-  border-radius: 10px;
-  background-color: #000001;
-  color:{insertCol1};
-  margin-top: 5px;
-	margin-right: 5px;
-  padding-top: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#custom-arch {
+#custom-launcher {
   font-size: 20px;
-	margin-left: 15px;
+  color: {insertCol1};
+  padding-right: 10px;
+  background-color: rgba(15,17,19,1);
 }
 
-#workspaces button {
-  background: #000001;
-  color:{insertCol1};
-
-}
-
-#workspaces button.active {
-  color: {insertCol2};
-}
-
-#clock, #backlight, #custom-info-cava,#temperature, #cpu, #pulseaudio, #network, #battery , #tray, #memory ,#custom-playerctl{
-  border-radius: 10px;
-  background-color: #000001;
-  color:{insertCol1};
-
+#memory{
+  font-size: 15px;
   margin-top: 5px;
-  padding-left: 9px;
-  padding-right: 9px;
-  margin-right: 15px;
+  margin-bottom: 5px;
+  background-color: rgba(15,17,19,1);
 }
 
-@keyframes blink {
-  to {
-    background-color: #ffffff;
-    color: black;
-  }
+#cpu {
+  color: {insertCol1};
+  padding: 0px 10px 0px 12px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: rgba(15,17,19,1);
 }
 
-#battery.warning:not(.charging) {
-  background: #f38ba8;
-  color: white;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+#memory {
+  color: {insertCol1};
+  padding: 0px 10px 0px 0px;
+  border-radius: 0px 5px 5px 0px;
+  background-color: rgba(15,17,19,1);
 }
 
-/* #pulseaudio { */
-/*   font-size: 20px; */
-/* 	margin-left: 15px; */
-/* } */
-
-#tray{
-  padding-right: 8px;
-  padding-left: 10px;
+#temperature {
+  color: {insertCol1};
+  padding: 0px 12px 0px 0px;
+  border-radius: 0px 5px 5px 0px;
+  background-color: rgba(15,17,19,1);
 }
 
-/* #pulseaudio {
-  border-radius: 10px;
-  background-color: #11111b;
-  color: #cba6f7;
-  margin-top: 15px;
-	margin-right: 15px;
-  padding-top: 1px;
+#custom-window-name {
+  color: {insertCol1};
+  margin-right: 10px;
+  background-color: rgba(15,17,19,1);
+}
+
+#custom-pacman-update-icon {
+  background-color: {insertCol1};
+  color: {insertCol1};
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#custom-pacman-update {
+  color: {insertCol1};
+  margin: 5px 10px 5px 0px;
+}
+
+#workspaces button:nth-child(1) label {
+  color: {insertCol1};
+  margin: 0px 8px;
+  background-color: rgba(15,17,19,1);
+}
+
+#workspaces button:nth-child(2) label {
+  color: {insertCol1};
+  margin: 0px 8px;
+  background-color: rgba(15,17,19,1);
+}
+
+#workspaces button:nth-child(3) label {
+  color: {insertCol1};
+  margin: 0px 8px;
+  background-color: rgba(15,17,19,1);
+}
+
+#workspaces button:nth-child(4) label {
+  color: {insertCol1};
+  margin: 0px 8px;
+  background-color: rgba(15,17,19,1);
+}
+
+#workspaces button:nth-child(5) label {
+  color: {insertCol1};
+  margin: 0px 8px;
+  background-color: rgba(15,17,19,1);
+}
+
+#workspaces button:nth-child(6) label {
+  color: {insertCol1};
+  margin: 0px 8px;
+  background-color: rgba(15,17,19,1);
+}
+
+#workspaces button:nth-child(7) label {
+  color: {insertCol1};
+  margin: 0px 8px;
+  background-color: rgba(15,17,19,1);
+}
+
+#workspaces button:nth-child(8) label {
+  color: {insertCol1};
+  margin: 0px 8px;
+  background-color: rgba(15,17,19,1);
+}
+
+#workspaces button:nth-child(9) label {
+  color: {insertCol1};
+  margin: 0px 8px;
+  background-color: rgba(15,17,19,1);
+}
+
+
+#battery {
+  color: {insertCol1};
+  margin: 0px 10px 0px 0px;
+}
+
+#pulseaudio,
+#backlight {
+  font-size: 15px;
+  background-color: rgba(15,17,19,1);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#backlight {
+  color: {insertCol1};
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: rgba(15,17,19,1);
+}
+
+#pulseaudio {
+  color: {insertCol1};
+  padding: 0px 10px 0px 0px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+#custom-right-arr {
+  color: {insertCol1};
+  background-color: rgba(15,17,19,1);
+}
+
+#custom-pacman {
+  color: {insertCol1};
+  background-color: rgba(15,17,19,1);
+}
+
+#network {
+  color: {insertCol1};
+  margin-right: 10px;
+  background-color: rgba(15,17,19,1);
+}
+
+#custom-dot {
+  color: {insertCol1};
+  padding-right: 10px;
+  background-color: rgba(15,17,19,1);
+}
+
+#custom-dot-alt {
+  color: {insertCol1};
   padding-left: 10px;
   padding-right: 10px;
-} */
+}
+
+#disk {
+  color: {insertCol1};
+  background-color: rgba(15,17,19,1);
+}
+
+#custom-clock-icon {
+  color: {insertCol1};
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#custom-filler {
+  color: {insertCol1};
+  padding-left: 0px;
+  padding-right: 9px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#clock {
+  color: {insertCol1};
+  padding-left: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
