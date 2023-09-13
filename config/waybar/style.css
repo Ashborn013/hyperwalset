@@ -57,21 +57,11 @@ window#waybar {
   margin-right: 10px;
   background-color: rgba(15,17,19,1);
 }
-
-#custom-pacman-update-icon {
-  background-color: {insertCol1};
+#custom-wrap-left, #custom-wrap-right{
   color: {insertCol1};
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-radius: 5px;
+  background-color: rgba(15,17,19,1);
 }
 
-#custom-pacman-update {
-  color: {insertCol1};
-  margin: 5px 10px 5px 0px;
-}
 
 #workspaces button:nth-child(1) label {
   color: {insertCol1};
@@ -159,7 +149,7 @@ window#waybar {
   background-color: rgba(15,17,19,1);
 }
 
-#custom-pacman {
+#custom-bluetooth {
   color: {insertCol1};
   background-color: rgba(15,17,19,1);
 }
