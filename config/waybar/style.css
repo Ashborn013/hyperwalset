@@ -63,58 +63,23 @@ window#waybar {
 }
 
 
-#workspaces button:nth-child(1) label {
-  color: {insertCol1};
-  margin: 0px 8px;
-  background-color: rgba(15,17,19,1);
+
+
+#workspaces button {
+  color: {insertCol1}; 
+  background-color: rgba(15,17,19,1); 
+
 }
 
-#workspaces button:nth-child(2) label {
-  color: {insertCol1};
-  margin: 0px 8px;
-  background-color: rgba(15,17,19,1);
+#workspaces button.active {
+  color: {insertCol2};
 }
 
-#workspaces button:nth-child(3) label {
-  color: {insertCol1};
-  margin: 0px 8px;
-  background-color: rgba(15,17,19,1);
-}
 
-#workspaces button:nth-child(4) label {
-  color: {insertCol1};
-  margin: 0px 8px;
-  background-color: rgba(15,17,19,1);
-}
 
-#workspaces button:nth-child(5) label {
-  color: {insertCol1};
-  margin: 0px 8px;
-  background-color: rgba(15,17,19,1);
-}
 
-#workspaces button:nth-child(6) label {
-  color: {insertCol1};
-  margin: 0px 8px;
-  background-color: rgba(15,17,19,1);
-}
-
-#workspaces button:nth-child(7) label {
-  color: {insertCol1};
-  margin: 0px 8px;
-  background-color: rgba(15,17,19,1);
-}
-
-#workspaces button:nth-child(8) label {
-  color: {insertCol1};
-  margin: 0px 8px;
-  background-color: rgba(15,17,19,1);
-}
-
-#workspaces button:nth-child(9) label {
-  color: {insertCol1};
-  margin: 0px 8px;
-  background-color: rgba(15,17,19,1);
+#workspaces button.active {
+  color: {insertCol2};
 }
 
 
